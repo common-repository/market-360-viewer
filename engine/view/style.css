@@ -1,0 +1,289 @@
+.presentationContainer-market360 .mainPresentationContaier {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+	position: relative;
+    
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-text-size-adjust: none;
+}
+
+.presentationContainer-market360 .outerWrapper {
+    width: 100%;
+    height: 100%;
+    display: table;
+    position: relative;
+	cursor: pointer;
+}
+
+.presentationContainer-market360 .zoomLayer {
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 0;
+    position: absolute;
+}
+
+.presentationContainer-market360 .rotationLayer {
+    font-size: 0;
+    position: absolute;
+	
+/*    -webkit-transform: translatez(0);
+    -moz-transform: translatez(0);
+    -ms-transform: translatez(0);
+    -o-transform: translatez(0);
+    transform: translatez(0);*/
+
+/*	transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);*/
+
+/*	transform-style: preserve-3d
+	-moz-transform-style: preserve-3d;*/
+
+/*	-webkit-backface-visibility: hidden !important;
+	-moz-backface-visibility:    hidden !important;
+	-ms-backface-visibility:     hidden !important;*/
+
+}
+.presentationContainer-market360 .rotationLayer.animating {
+     -webkit-transition: .2s width, .2s height, .2s top, .2s left, .2s margin-left, .2s margin-right, .2s margin-top, .2s margin-bottom;
+		-moz-transition: .2s width, .2s height, .2s top, .2s left, .2s margin-left, .2s margin-right, .2s margin-top, .2s margin-bottom;
+		  -o-transition: .2s width, .2s height, .2s top, .2s left, .2s margin-left, .2s margin-right, .2s margin-top, .2s margin-bottom;
+			 transition: .2s width, .2s height, .2s top, .2s left, .2s margin-left, .2s margin-right, .2s margin-top, .2s margin-bottom;
+			 /*transition: .4s width, .4s height, .4s top, .4s left, .4s margin-left, .4s margin-right, .4s margin-top, .4s margin-bottom;*/
+	 -webkit-transition-timing-function: linear;
+		-moz-transition-timing-function: linear;
+		  -o-transition-timing-function: linear;
+			 transition-timing-function: linear;
+}
+
+.presentationContainer-market360 .rotationLayer > .imageContainer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+	top: 0px;
+	left: 0px;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
+	-moz-user-select: none;
+    user-select: none;
+}
+
+.presentationContainer-market360 .zoomLayer > .imageContainer {
+	opacity: 0;
+    display: inline-block;
+	background-repeat: no-repeat;
+}
+
+.presentationContainer-market360 .controlsPanel {
+    z-index: 100;
+	width: 320px;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgba(0,0,0, 0.6);
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	display: table;
+	line-height: 0px;
+}
+
+.presentationContainer-market360 .controlsPanelInnerWrapper{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.presentationContainer-market360 .controlsPanelOuterWrapper{
+	visibility: hidden;
+	position: absolute;
+    z-index: 100;
+	width: 100%;
+	height: 40px;
+	text-align: center;
+	bottom: 20px;
+	left: 0;
+	right: 0;
+	display: table;
+	line-height: 0px;
+}
+
+.presentationContainer-market360 .controlsPanel.fullscreen{
+    text-align: center;
+    bottom: 40px;
+    z-index: 100;
+}
+
+.presentationContainer-market360 .controlButton {
+    display: inline-block;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    margin: 5px 10px;
+    opacity: 0.99;
+	vertical-align: middle;
+}
+
+.presentationContainer-market360 .controlButton:active {
+	opacity: 0.4;
+}
+
+.presentationContainer-market360 .disabled {
+    opacity: 0.4;
+}
+
+.presentationContainer-market360 .rotateButton {
+    background-image: url('../images/autorotacja.png');
+}
+
+.presentationContainer-market360 .rotateButton.pause {
+    background-image: url('../images/palzuj.png');
+}
+
+.presentationContainer-market360 .controlsPanel.notouch .rotateButton:hover {
+	background-image: url('../images/autorotacja_over.png');
+}
+
+.presentationContainer-market360 .controlsPanel.notouch .rotateButton.pause:hover {
+	background-image: url('../images/palzuj_over.png');
+}
+
+.presentationContainer-market360 .rotateButton.keyFrames{
+	background-image: url('../images/informacje.png');
+} 
+
+.presentationContainer-market360 .controlsPanel.notouch .rotateButton.keyFrames:hover{
+	background-image: url('../images/informacje_over.png');
+} 
+
+.presentationContainer-market360 .zoomInButton {
+	background-image: url('../images/powieksz.png');
+}
+
+.presentationContainer-market360 .zoomOutButton {
+	background-image: url('../images/pomniejsz.png');
+}
+
+.presentationContainer-market360 .fullscreenButton {
+    background-image: url('../images/pelny_ekran.png');
+}
+
+.presentationContainer-market360 .fullscreenButton.fullscreen{
+    background-image: url('../images/ramka.png');
+}
+
+.presentationContainer-market360 .leftButton {
+	background-image: url('../images/lewo.png');
+}
+
+.presentationContainer-market360 .controlsPanel.notouch .leftButton:hover {
+	background-image: url('../images/lewo_over.png');
+}
+
+.presentationContainer-market360 .controlsPanel .leftButton.keyFrames {
+	background-image: url('../images/lewo_info.png');
+}
+
+.presentationContainer-market360 .controlsPanel.notouch .leftButton.keyFrames:hover {
+	background-image: url('../images/lewo_info_over.png');
+}
+
+.presentationContainer-market360 .rightButton {
+	background-image: url('../images/prawo.png');
+}
+
+.presentationContainer-market360 .controlsPanel.notouch .rightButton:hover {
+	background-image: url('../images/prawo_over.png');
+}
+
+.presentationContainer-market360 .controlsPanel .rightButton.keyFrames {
+	background-image: url('../images/prawo_info.png');
+}
+
+.presentationContainer-market360 .controlsPanel.notouch .rightButton.keyFrames:hover {
+	background-image: url('../images/prawo_info_over.png');
+}
+
+.presentationContainer-market360 .controlsPanel.notouch .fullscreenButton.fullscreen:hover{
+	background-image: url('../images/ramka_over.png');
+}
+
+.presentationContainer-market360 .controlsPanel.notouch .fullscreenButton:hover{
+	background-image: url('../images/pelny_ekran_over.png');
+}
+
+.presentationContainer-market360 .controlsPanel.notouch .zoomOutButton:hover {
+	background-image: url('../images/pomniejsz_over.png');
+}
+
+.presentationContainer-market360 .controlsPanel.notouch .zoomInButton:hover {
+	background-image: url('../images/powieksz_over.png');
+}
+
+.presentationContainer-market360 .hidden {
+    display: none;
+}
+
+.presentationContainer-market360 .presentationContainer-market360{
+    display: inline-block;
+}
+
+.presentationContainer-market360 .buttonDisabled {
+	opacity: 0.3;
+}
+
+.presentationContainer-market360 .loadingDiv{
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+	position: absolute;
+	z-index: 101;
+}
+	.presentationContainer-market360 .loadingDiv div {
+		position: absolute;
+		height: 29px;
+		width: 66px;
+		padding: 18px 10px 20px 70px;
+		background-image: url('../images/market360_loading2.gif'), url('../images/loading_background.png');
+		background-position: 8px 8px, center center;
+		background-size: 52px 52px, 100% 100%;
+		background-repeat: no-repeat;
+	}
+	.presentationContainer-market360 .loadingDiv .percentCounter {
+		color: #fff;
+	}
+	
+@-ms-viewport {
+	width: device-width;
+	height: device-height;
+}
+
+body{
+	/* Block area from manipulation actions (zoom, pan) */
+	-ms-touch-action: none;
+	touch-action: none;
+	/*-ms-content-zooming: none*/
+}
+
+#loadingMask{
+	background-color: #FFFFFF;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+	position: absolute;
+}
+
+.keyFrameFade {
+	transition: opacity 1s ease-in-out;
+	-moz-transition: opacity 1s ease-in-out;
+	-webkit-transition: opacity 1s ease-in-out;
+}
